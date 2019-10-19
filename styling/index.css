@@ -1,0 +1,264 @@
+
+html,body,div,span,nav,a,button,img,input,header,ul,li,select,option,section{
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0;
+    /* font-family: 'Lato','sans-serif','Segoe UI', 'Tahoma', 'Geneva', 'Verdana'; */
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* colors */
+.dom-fg{
+    color: #4faafc;
+}
+.dom-bg{
+    background: #4faafc;
+}
+.white-fg{
+    color: white;
+}
+.centered{
+    width: fit-content;
+    margin: auto;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+}
+.section-header{
+    border-bottom: 2px solid black;
+}
+
+/*intro section*/
+.intro-section{
+    background: #252934;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.name{
+    color: #E31B6D;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: 0;
+}
+.bold-message{
+    font-size: 45px;
+    letter-spacing: 3px;
+    max-width: 220px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+.light-message{
+    letter-spacing: 2px;
+    font-size: 20px;
+    max-width: 80%;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15%;
+}
+.explore-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.explore-div button{
+    border: 1px solid white;
+    height: 40px;
+    border-radius: 3px;
+    background: inherit;
+    color: white;
+    font-size: 18px;
+}
+
+/* about section */
+.about-section{
+    background: #ffffff;
+}
+.sixcol{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.img-div{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+}
+.img-div img{
+    width: inherit;
+    height: inherit;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.role{
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #e31b6d;
+    width: 100%;
+}
+.fst{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fst i{
+    font-size: 50px;
+    padding: 0 10px;
+}
+.fst span{
+    font-size: 32px;
+}
+.bars{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.bar{
+    width: 100%;
+    background: #F5F5F5;
+    height: 28px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    color: white;
+}
+.pct{
+    background: #00A1A7;
+    height: inherit;
+}
+.eighty{
+    width: 80%
+}
+.eighty-five{
+    width: 85%;
+}
+.ninety{
+    width: 90%;
+}
+.name-bar{
+    width:100px;
+    background: #04C2C9;
+    height: inherit;
+}
+.score{
+    text-align: right;
+    flex-grow: 1;
+    color: #666;
+}
+.cv-btn{
+    border: 1px solid #E31B6D;
+    height: 40px;
+    border-radius: 3px;
+    background: inherit;
+    color: #E31B6D;
+    font-size: 18px;
+    float: right;
+    cursor: pointer;
+}
+
+/* -------------------- project section ------------------ */
+.project-section, .projects{
+    width: 100%;
+    background: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.project{
+    width: 250px;
+    height: 250px;
+}
+.pd{
+    padding: 5%;
+}
+
+
+/* ------------------- contact section ----------------- */
+.contact-section, .contacts, .contact{
+    background: #E8D2AC;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.avail{
+    width: 100%;
+    text-align: center;
+}
+.contact{
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (min-width: 350px) {
+    .bold-message{
+        font-size: 55px;
+        letter-spacing: 3px;
+    }
+}
+@media screen and (min-width: 450px) {
+    .intro-section{
+        display: block;
+    }
+    .name{
+        margin: 0;
+        margin-bottom: 8%;
+    }
+    .light-message{
+        margin-bottom: 10%;
+    }
+}
+@media screen and (min-width: 700px) {
+    .name{
+        margin: 0;
+        margin-bottom: 10vh;
+    }
+    .about-section{
+        display: flex;
+        width: 100%;
+    }
+    .sixcol{
+        height: 100vh;
+        flex-wrap: wrap;
+    }
+    .lt-col{
+        width: 40%;
+    }
+    .rt-col{
+        width: 60%;
+        justify-content: start;
+    }
+    .img-div {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .fst {
+        justify-content: start;
+        text-align: left;
+        width: 100%;
+    }
+    .project{
+        width: 33.3%;
+        height: 250px;
+    }
+}
