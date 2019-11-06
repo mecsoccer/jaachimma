@@ -37,16 +37,16 @@ body{
     background: #444649;
 }
 .accent-fg-2{
-    color: red;
+    color: rgb(160, 157, 157);
 }
 .accent-bg-2{
     background: red;
 }
 .accent-fg-3{
-    color: #F6642D;
+    color: #00a1a7;
 }
 .accent-bg-3{
-    background: #F6642D;
+    background: #00a1a7;
 }
 .accent-bd-3{
     border: 1px solid #F6642D !important;
@@ -97,6 +97,9 @@ body{
 }
 .twenty{
     font-size: 20px
+}
+.twenty-two{
+    font-size: 22px
 }
 .twenty-four{
     font-size: 24px;
@@ -364,22 +367,6 @@ body{
     border-radius: 3px;
 }
 
-/* buttons */
-.normal-btn{
-    width: fit-content;
-    padding: 10px;
-    border: none;
-    text-decoration: none;
-}
-.trans-btn {
-    width: fit-content;
-    padding: 0 10px;
-    border: 2px solid ;
-    background: inherit;
-    border-radius: 4px;
-    text-decoration: none;
-}
-
 /* list */
 .no-li-style{
     list-style: none;
@@ -425,10 +412,11 @@ body{
 .trans-btn{
     height: 28px;
     border-radius: 3px;
-    border: 0.5px solid #a61f23;
+    border: 2px solid #00A1A7;
     padding: 6px 7px; 
     font-size: 12px;
-    color: #43536F;
+    color: #00A1A7;
+    background: inherit;
 }
 
 /* cursor */

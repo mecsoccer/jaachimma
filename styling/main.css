@@ -61,6 +61,7 @@ section{
 }
 .bold-message{
     font-size: 45px;
+    line-height: 50px;
     letter-spacing: 3px;
     max-width: 220px;
     margin: auto;
@@ -90,13 +91,25 @@ section{
     color: white;
     font-size: 18px;
 }
+.explore-div svg{
+    height: 50px;
+    width: 40px;
+    transform: rotate(45deg);
+    position: relative;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
 
 /* about section */
 .about-section{
     background: #ffffff;
 }
 .sixcol{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -149,6 +162,8 @@ section{
 .pct{
     background: #00A1A7;
     height: inherit;
+    animation-name: slide;
+    animation-duration: 3s;
 }
 .eighty{
     width: 80%
@@ -328,3 +343,22 @@ section{
         height: 250px;
     }
 }
+
+@-webkit-keyframes bounce {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@keyframes bounce {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+/*@-webkit-keyframes slide {
+    from {transform: translate(-20px, 0);}
+    to {transform: translate(0, 0);}
+}
+@keyframes slide {
+    from {padding-right: 100px;}
+    to {padding-right: 0;}
+}
+*/
