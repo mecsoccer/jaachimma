@@ -35,6 +35,8 @@ body{
 .container{
     max-width: 1400px;
     margin: auto;
+    z-index: 10000;
+    overflow-x: hidden;
 }
 section{
     min-height: 100vh;
@@ -170,6 +172,7 @@ section{
     height: inherit;
     animation-name: slide;
     animation-duration: 3s;
+    animation-name: grow;
 }
 .eighty{
     width: 80%
@@ -392,3 +395,12 @@ section{
     to {padding-right: 0;}
 }
 */
+
+/*@-webkit-keyframes grow {
+    from {width: 0;}
+    to {width: 100%;}
+}
+@keyframes grow {
+    from {width: 0;}
+    to {width: 100%;}
+}*/
