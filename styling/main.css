@@ -245,13 +245,13 @@ section{
     background: white;
 }
 .edms-project{
-    background: url('../image/anaytics.PNG') center center/cover;
+    background: url('../image/dashboard.png') center center/cover;
 }
 .propertypro{
-    background: url('../image/proppro-landing.PNG') center center/cover;
+    background: url('../image/proppro-landing - Copy.PNG') center center/cover;
 }
 .headlines{
-    background: url('../image/headlines.PNG') center center/cover;
+    background: url('../image/headlines - Copy.PNG') center center/cover;
 }
 .propro-api{
     background: url('../image/propro-api.PNG') center center/cover;
@@ -260,7 +260,7 @@ section{
     background: url('../image/storemanager.PNG') center center/cover;
 }
 .propro-ui{
-    background: url('../image/propro-ui.png') center center/cover;
+    background: url('../image/seyisbox.PNG') center center/cover;
 }
 .pd{
     padding: 5%;
