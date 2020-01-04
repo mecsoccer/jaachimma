@@ -33,26 +33,26 @@
         </section>
         <section id="about" class="about-section">
             <div class="sixcol lt-col">
-                <div class="sixty-five">
+                <div class="lt-col-child">
                     <div class="img-div">
                         <img src="./image/memyself.jpg"/>
                     </div>
                     <h4 class="role">Fullstack Developer</h4>
                     <div class="sell">
-                        <div>
+                        <div class="flex flex-jc-ct wrap">
                             <div class="fst">
-                                <i class="mdi mdi-speedometer accent-fg-3"></i>
+                                <i class="mdi mdi-speedometer"></i>
                                 <span class="twelve">
-                                    <span class="bold accent-fg-3 fourteen accent-fg-3 ">Fast:</span> Fast load times and lag free interaction, my highest priority.
+                                    <span class="bold dom-color fourteen">Fast:</span> Fast load times and lag free interaction, my highest priority.
                                 </span>
                             </div>
                             <div class="fst">
-                                <i class="mdi mdi-cellphone-link accent-fg-3 "></i>
-                                <span class="twelve"><span class="bold accent-fg-3 fourteen dom-color">Responsive:</span> My layouts will work on any device, big or small.</span>
+                                <i class="mdi mdi-cellphone-link "></i>
+                                <span class="twelve"><span class="bold fourteen dom-color">Responsive:</span> My layouts will work on any device, big or small.</span>
                             </div>
                             <div class="fst">
-                                <i class="mdi mdi-rocket accent-fg-3 "></i>
-                                <span class="twelve"><span class="bold accent-fg-3 fourteen dom-color">Dynamic:</span> Websites don't have to be static, I love making pages come to life.</span>
+                                <i class="mdi mdi-rocket "></i>
+                                <span class="twelve"><span class="bold fourteen dom-color">Dynamic:</span> Websites don't have to be static, I love making pages come to life.</span>
                             </div>
                         </div>
                     </div>
@@ -242,7 +242,7 @@
             </div>
         </section>
         <section id="contact" class="contact-section contact-sec">
-            <h2 class="section-header contacts-header">CONTACT</h2>
+            <h2 class="section-header contacts-header white-text">CONTACT</h2>
             <div class="contacts">
                 <p class="avail">I'm available for work, get in touch</p>
                 <div class="flex wrap flex-jc-ct">
@@ -265,20 +265,22 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
     <script>
-        AOS.init({ duration: 1200 });
+        (function(){
+            AOS.init({ duration: 1200 });
 
-        const myName = 'Jaachimma Onyenze'.split('');
-        const nameNode = document.querySelector('#name');
-        let len = 1;
+            const myName = 'Jaachimma Onyenze'.split('');
+            const nameNode = document.querySelector('#name');
+            let len = 1;
 
-        const animation = setInterval(() => {
-            myName[len - 2] !== ' ' ?
-                nameNode.innerHTML += myName[len - 1] :
-                nameNode.innerHTML += ` ${myName[len - 1]}`;
-            if (len === myName.length) clearInterval(1);
-            len += 1;
-        }, 100);
+            const animation = setInterval(() => {
+                myName[len - 2] !== ' ' ?
+                    nameNode.innerHTML += myName[len - 1] :
+                    nameNode.innerHTML += ` ${myName[len - 1]}`;
+                if (len === myName.length) clearInterval(1);
+                len += 1;
+            }, 100);
 
-        const container = document.querySelector('.container');
+            const container = document.querySelector('.container');
+        })()
     </script>
 </body>

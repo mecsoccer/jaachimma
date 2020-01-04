@@ -1,4 +1,4 @@
-html,body,div,span,nav,a,button,img,input,header,ul,li,select,option{
+* {
     box-sizing: border-box;
 }
 html, body{
@@ -422,4 +422,82 @@ body{
 /* cursor */
 .pointer{
     cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+    .one-md-col{
+        width: 8.33%;
+    }
+    .two-md-col{
+        width: 16.66%
+    }
+    .three-md-col{
+        width: 25%;
+    }
+    .four-md-col{
+        width: 33.33%;
+    }
+    .five-md-col{
+        width: 41.67%;
+    }
+    .six-md-col{
+        width: 50%; 
+    }
+    .seven-md-col{
+        width: 58.33%;
+    }
+    .eight-md-col{
+        width: 66.67%;
+    }
+    .nine-md-col{
+        width: 75%;
+    }
+    .ten-md-col{
+        width: 83.33%;
+    }
+    .eleven-md-col{
+        width: 91.67%;
+    }
+    .twelve-md-col{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .one-lg-col{
+        width: 8.33%;
+    }
+    .two-lg-col{
+        width: 16.66%
+    }
+    .three-lg-col{
+        width: 25%;
+    }
+    .four-lg-col{
+        width: 33.33%;
+    }
+    .five-lg-col{
+        width: 41.67%;
+    }
+    .six-lg-col{
+        width: 50%; 
+    }
+    .seven-lg-col{
+        width: 58.33%;
+    }
+    .eight-lg-col{
+        width: 66.67%;
+    }
+    .nine-lg-col{
+        width: 75%;
+    }
+    .ten-lg-col{
+        width: 83.33%;
+    }
+    .eleven-lg-col{
+        width: 91.67%;
+    }
+    .twelve-lg-col{
+        width: 100%;
+    }    
 }
