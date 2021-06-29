@@ -256,6 +256,9 @@ body{
     overflow: hidden;
     background: white;
 }
+.liveizy-project{
+    background: url('../image/liveizy-advert.jpeg') center center/cover;
+}
 .edms-project{
     background: url('../image/tbh.jpg') center center/cover;
 }
