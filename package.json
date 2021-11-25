@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Jaachimma Onyenze's portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mecsoccer/jaachimma.git"
+  },
+  "author": "Jaachimma Onyenze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mecsoccer/jaachimma/issues"
+  },
+  "homepage": "https://github.com/mecsoccer/jaachimma#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
