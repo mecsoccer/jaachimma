@@ -144,6 +144,7 @@ body{
     width: inherit;
     height: inherit;
     border-radius: 50%;
+    object-fit: cover;
 }
 .role{
     text-align: center;
@@ -255,6 +256,9 @@ body{
     cursor: pointer;
     overflow: hidden;
     background: white;
+}
+.liveizy-project{
+    background: url('../image/liveizy-advert.jpeg') center center/cover;
 }
 .edms-project{
     background: url('../image/tbh.jpg') center center/cover;
