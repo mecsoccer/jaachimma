@@ -290,7 +290,7 @@
                 myName[len - 2] !== ' ' ?
                     nameNode.innerHTML += myName[len - 1] :
                     nameNode.innerHTML += ` ${myName[len - 1]}`;
-                if (len === myName.length) clearInterval(1);
+                if (len === myName.length) clearInterval(animation);
                 len += 1;
             }, 100);
 
